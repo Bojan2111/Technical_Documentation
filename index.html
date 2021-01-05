@@ -1,0 +1,141 @@
+<!--
+	Technical Documentation Project for FreeCodeCamp
+	Created by Bojan Adzic aka Coder_Owl
+-->
+<body>
+	<nav id="navbar">
+		<div>
+			<header class="nav-title">
+				<h3>Quick Links</h3>
+			</header>
+		</div>
+		<div class="nav-group">
+			<a class="nav-link" href="#the_python_tutorial">The Python Tutorial</a>
+			<a class="nav-link" href="#python_indentation">Python Indentation</a>
+			<a class="nav-link" href="#python_variables">Python Variables</a>
+			<a class="nav-link" href="#comments">Comments</a>
+			<a class="nav-link" href="#zen_of_python">Zen of Python</a>
+			<a class="nav-link" href="#references">References</a>
+		</div>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="the_python_tutorial">
+			<header>
+				<h1>The Python Tutorial</h1>
+			</header>
+			<article>
+				<p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+				<p>The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python Web site, <a href="https://www.python.org/">https://www.python.org/</a>, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
+				<p>The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.</p>
+				<p>This tutorial introduces the reader informally to the basic concepts and features of the Python language and system. It helps to have a Python interpreter handy for hands-on experience, but all examples are self-contained, so the tutorial can be read off-line as well.</p>
+			</article>
+		</section>
+		<section class="main-section" id="python_indentation">
+			<header>
+				<h2>Python Indentation</h2>
+			</header>
+			<article>
+				<p>Indentation refers to the spaces at the beginning of a code line.</p>
+				Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+				<p>Python uses indentation to indicate a block of code.</p>
+				<code>
+if 5 > 2:
+  print("Five is greater than two!")
+				</code>
+				<p>Python will give you an error if you skip the indentation:</p>
+				<code>
+if 5 > 2:
+print("Five is greater than two!")
+				</code>
+				<p>The number of spaces is up to you as a programmer, but it has to be at least one.</p>
+				<code>
+if 5 > 2:
+ print("Five is greater than two!")
+
+if 5 > 2:
+        print("Five is greater than two!")
+				</code>
+				<p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:</p>
+				<code>
+if 5 > 2:
+ print("Five is greater than two!")
+        print("Five is greater than two!")
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="python_variables">
+			<header>
+				<h2>Python Variables</h2>
+			</header>
+			<article>
+				<p>In Python, variables are created when you assign a value to it:</p>
+				<p>Variables in Python:</p>
+				<code>
+x = 5
+y = "Hello, World!"
+				</code>
+				<p>Python has no command for declaring a variable.</p>
+				<p>You will learn more about variables in the Python Variables chapter.</p>
+			</article>
+		</section>
+		<section class="main-section" id="comments">
+			<header>
+				<h2>Comments</h2>
+			</header>
+			<article>
+				<p>Python has commenting capability for the purpose of in-code documentation.</p>
+				<p>Comments start with a #, and Python will render the rest of the line as a comment:</p>
+				<p>Comments in Python:</p>
+				<code>
+#This is a comment.
+print("Hello, World!")
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="zen_of_python">
+			<header>
+				<h2>Zen of Python</h2>
+			</header>
+			<article>
+				<p>The Zen of Python is a collection of 19 "guiding principles" for writing computer programs that influence the design of the Python programming language.[1] Software engineer Tim Peters wrote this set of principles and posted it on the Python mailing list in 1999.[2] Peters's list left open a 20th principle "for Guido to fill in", referring to Guido van Rossum, the original author of the Python language. The vacancy for a 20th principle has not been filled.</p>
+				<p>Peters's Zen of Python was included as entry number 20 in the language's official Python Enhancement Proposals, which was released into the public domain. It is also included as an Easter egg in the Python interpreter, which can be displayed by entering</p><code>import this</code>
+				<p>In May 2020, Barry Warsaw wrote the lyrics to <a href="https://www.youtube.com/watch?v=i6G6dmVJy74">music</a>.</p>
+				<p>The principles are listed as follows:</p>
+				<ul>
+					<li>Beautiful is better than ugly.</li>
+					<li>Explicit is better than implicit.</li>
+					<li>Simple is better than complex.</li>
+					<li>Complex is better than complicated.</li>
+					<li>Flat is better than nested.</li>
+					<li>Sparse is better than dense.</li>
+					<li>Readability counts.</li>
+					<li>Special cases aren't special enough to break the rules.</li>
+					<li>Although practicality beats purity.</li>
+					<li>Errors should never pass silently.</li>
+					<li>Unless explicitly silenced.</li>
+					<li>In the face of ambiguity, refuse the temptation to guess.</li>
+					<li>There should be one—and preferably only one—obvious way to do it.</li>
+					<li>Although that way may not be obvious at first unless you're Dutch.</li>
+					<li>Now is better than never.</li>
+					<li>Although never is often better than right now.</li>
+					<li>If the implementation is hard to explain, it's a bad idea.</li>
+					<li>If the implementation is easy to explain, it may be a good idea.</li>
+					<li>Namespaces are one honking great idea—let's do more of those!</li>
+				</ul>
+			</article>
+		</section>
+		<section class="main-section" id="references">
+			<header>
+				<h2>References</h2>
+			</header>
+			<article>
+				<p>All text in this Technical Documentation was taken from:</p>
+				<ol>
+					<li><a href="https://docs.python.org/3/tutorial/index.html">The Python Tutorial</a></li>
+					<li><a href="https://www.w3schools.com/python/python_syntax.asp">w3schools.com Python Syntax Tutorial</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Zen_of_Python">Zen of Python - Wikipedia Article</a></li>
+				</ol>
+			</article>
+		</section>
+	</main>
+</body>

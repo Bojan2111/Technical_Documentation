@@ -1,0 +1,79 @@
+/*
+	Technical Documentation Project for FreeCodeCamp
+	Created by Bojan Adzic aka Coder_Owl
+*/
+body {
+	font-family: Tahoma, Sans-serif;
+}
+
+#navbar {
+	position: fixed;
+	width: 250px;
+	background-color: #eee;
+	font-size: 1.4em;
+	overflow: scroll;
+	top: 0;
+	height: 800px;
+}
+
+.nav-title {
+	line-height: 0;
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+
+.nav-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-link {
+	padding: 10px;
+	border-bottom: 1px solid black;
+	text-decoration: none;
+	color: black;
+}
+
+.nav-link:hover {
+	background-color: #ccc;
+}
+
+#main-doc {
+	position: relative;
+	margin-left: 250px;
+	padding: 20px;
+}
+
+#references a {
+	text-decoration: none;
+	color: #508;
+	font-weight: bold;
+}
+
+article {
+	font-size: 1.2em;
+}
+
+code {
+	display: block;
+	white-space: pre;
+	position: relative;
+	word-break: normal;
+	word-wrap: normal;
+	background-color: #ddd;
+	padding: 5px 10px;
+	margin: 10px auto 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+	#navbar {
+		width: 100%;
+		height: 200px;
+		z-index: 1;
+	}
+
+	#main-doc {
+		margin-left: 5px;
+		z-index: 0;
+	}
+}
